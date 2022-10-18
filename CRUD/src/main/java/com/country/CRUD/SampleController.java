@@ -18,7 +18,8 @@ public class SampleController {
 		ArrayList<EmployeeEntity> transformedvalues=new ArrayList<EmployeeEntity>();
     	for(EmployeeEntity emt:er.findAll()) {
     		EmployeeEntity temp=new EmployeeEntity();
-    		temp.setId(emt.getId());
+    		//temp.setId(emt.getId());
+    		temp.setEmployeeName(emt.getEmployeeName());
     		if(emt.getEmployeeName().contains("$")) {
     			temp.setEmployeeName(emt.getEmployeeName().replaceAll("\\$", ""));
     		}
