@@ -17,8 +17,6 @@ private CarRepo cr;
 public List<CarEntity> getcar(){
 	return cr.getjoin();
 }
-private BikeRepo bike;
-@Autowired
 
 private TruckRepo tr;
 @GetMapping ("/truck")
